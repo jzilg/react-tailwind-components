@@ -6,7 +6,14 @@ export const App: FC = () => {
     <div className="m-12">
       <h1 className="text-4xl font-bold mb-6">Components</h1>
       <h2 className="text-2xl font-bold mb-6">Button</h2>
-      <Button>Submit</Button>
+      <ul className="flex gap-3">
+        <li>
+          <Button>Submit</Button>
+        </li>
+        <li>
+          <Button disabled>Disabled</Button>
+        </li>
+      </ul>
     </div>
   )
 }
