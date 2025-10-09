@@ -5,7 +5,7 @@ type AnchorProps = AnchorHTMLAttributes<HTMLAnchorElement>
 export const Anchor: FC<AnchorProps> = ({ children, ...props }) => (
   <a
     {...props}
-    className="focus-visible:outline-3 focus-visible:outline-blue-500 outline-offset-1"
+    className="outline-3 outline-offset-1 outline-transparent focus-visible:outline-blue-500 transition-colors"
   >
     {children}
   </a>
