@@ -1,6 +1,6 @@
 import type { FC, InputHTMLAttributes, SelectHTMLAttributes, TextareaHTMLAttributes } from 'react'
 
-type InputProps = InputHTMLAttributes<HTMLInputElement>
+type InputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'type'>
 
 export const Input: FC<InputProps> = (props) => {
   return (
