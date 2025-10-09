@@ -1,11 +1,21 @@
 import { type FC } from 'react'
 import { Button } from './components/Button.tsx'
 import { Checkbox, Input, Radio, Select, Textarea } from './components/Form.tsx'
+import { Anchor } from './components/Anchor.tsx'
 
 export const App: FC = () => {
   return (
     <div className="m-12">
       <h1 className="text-4xl font-bold mb-6">Components</h1>
+      <h2 className="text-2xl font-bold mb-6">Anchor</h2>
+      <ul>
+        <li>
+          <Anchor href="https://fsf.org">
+            Anchor Link
+          </Anchor>
+        </li>
+      </ul>
+      <hr className="my-6" />
       <h2 className="text-2xl font-bold mb-6">Button</h2>
       <ul className="flex gap-3">
         <li>
