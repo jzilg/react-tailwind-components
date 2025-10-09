@@ -6,7 +6,7 @@ export const Input: FC<InputProps> = (props) => {
   return (
     <input
       {...props}
-      className="py-2 px-3 border border-gray-500 rounded focus:outline-none focus-visible:ring focus-visible:ring-blue-500 disabled:opacity-50 disabled:bg-gray-200 disabled:hover:cursor-not-allowed"
+      className="py-2 px-3 border border-gray-500 rounded focus:outline-none focus-visible:ring focus-visible:ring-blue-500 ring-offset-1 disabled:opacity-50 disabled:bg-gray-200 disabled:hover:cursor-not-allowed"
     />
   )
 }
@@ -37,7 +37,7 @@ export const Textarea: FC<TextareaProps> = (props) => {
   return (
     <textarea
       {...props}
-      className="py-2 px-3 border border-gray-500 rounded focus:outline-none focus-visible:ring focus-visible:ring-blue-500 disabled:opacity-50 disabled:bg-gray-200 disabled:hover:cursor-not-allowed"
+      className="py-2 px-3 border border-gray-500 rounded focus:outline-none focus-visible:ring focus-visible:ring-blue-500 ring-offset-1 disabled:opacity-50 disabled:bg-gray-200 disabled:hover:cursor-not-allowed"
     />
   )
 }
@@ -48,7 +48,7 @@ export const Select: FC<SelectProps> = ({ children, ...props}) => {
   return (
     <select
       {...props}
-      className="py-2 px-3 border bg-transparent border-gray-500 hover:cursor-pointer rounded focus:outline-none focus-visible:ring focus-visible:ring-blue-500 disabled:opacity-50 disabled:bg-gray-200 disabled:hover:cursor-not-allowed"
+      className="py-2 px-3 border bg-transparent border-gray-500 hover:cursor-pointer rounded focus:outline-none focus-visible:ring focus-visible:ring-blue-500 ring-offset-1 disabled:opacity-50 disabled:bg-gray-200 disabled:hover:cursor-not-allowed"
     >
       {children}
     </select>
