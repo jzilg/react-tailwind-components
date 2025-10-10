@@ -1,7 +1,7 @@
-import { type FC } from 'react'
+import type { FC } from 'react'
+import { Anchor } from './components/Anchor.tsx'
 import { Button } from './components/Button.tsx'
 import { Checkbox, Input, Radio, Select, Textarea } from './components/Form.tsx'
-import { Anchor } from './components/Anchor.tsx'
 
 export const App: FC = () => {
   return (
@@ -10,9 +10,7 @@ export const App: FC = () => {
       <h2 className="text-2xl font-bold mb-6">Anchor</h2>
       <ul>
         <li>
-          <Anchor href="https://fsf.org">
-            Anchor Link
-          </Anchor>
+          <Anchor href="https://fsf.org">Anchor Link</Anchor>
         </li>
       </ul>
       <hr className="my-6" />
@@ -78,19 +76,13 @@ export const App: FC = () => {
       <ul className="flex gap-3">
         <li>
           <Select>
-            <option value="1">
-              Option I
-            </option>
-            <option value="2">
-              Option II
-            </option>
+            <option value="1">Option I</option>
+            <option value="2">Option II</option>
           </Select>
         </li>
         <li>
           <Select disabled>
-            <option value="1">
-              Option I
-            </option>
+            <option value="1">Option I</option>
           </Select>
         </li>
       </ul>
